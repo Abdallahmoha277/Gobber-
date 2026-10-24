@@ -4,7 +4,7 @@ pydantic
 pydantic-settings
 sqlalchemy
 alembic
-psycopg2-binary
+psycopg[binary]
 redis
 python-dotenv
 ruff
