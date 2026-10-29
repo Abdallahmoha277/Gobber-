@@ -62,9 +62,7 @@ User Request
 
 ---
 
-
-
----
+```
 
 ## 🛠️ Tech Stack
 
