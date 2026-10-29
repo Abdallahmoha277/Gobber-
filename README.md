@@ -62,6 +62,10 @@ User Request
 
 ---
 
+```
+
+---
+
 ## 🛠️ Tech Stack
 
 - **Backend:** Python, FastAPI, Uvicorn
@@ -85,48 +89,51 @@ Create a `.env` file in the root directory:
 DEEPSEEK_API_KEY="sk-your-deepseek-key"
 DATABASE_URL="postgresql://admin:secretpassword@localhost:5432/gobber_db"
 REDIS_URL="redis://localhost:6379/0"
+```
 
-
-# Clone the repository
+### 3. Run the Application
+```bash
 git clone https://github.com/Abdallahmoha277/Gobber-.git
 cd Gobber-
-
-# Start databases and sandbox
 docker compose up -d
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run database migrations
 alembic upgrade head
-
-# Start the FastAPI server
 python -m uvicorn app.main:app --host 0.0.0.0 --port 8000
+```
 
+### 4. Access the API
+- **Swagger UI:** `http://localhost:8000/docs`
+- **Health Check:** `http://localhost:8000/api/v1/health/db`
+- **Prometheus:** `http://localhost:9090`
+- **Grafana:** `http://localhost:3000` (admin / admin)
 
-4. Access the API
-Swagger UI: http://localhost:8000/docs
+---
 
-Health Check: http://localhost:8000/api/v1/health/db
+## 🧪 Testing
 
-Prometheus: http://localhost:9090
-
-Grafana: http://localhost:3000 (admin / admin)
-
-
-🧪 Testing
 To run the automated test suite:
 
-bash
+```bash
 pytest tests/ -v
+```
 
-👨‍💻 Author
-Abdallah Mohammed
+---
 
-LinkedIn
+## 👨‍💻 Author
 
-GitHub
+**Abdallah Mohammed**
 
+- [LinkedIn](https://www.linkedin.com/in/abdallah-mohammed-80a58a216/)
+- [GitHub](https://github.com/Abdallahmoha277)
 
-⭐ If you find this project interesting, feel free to star the repository!
+---
 
+⭐ *If you find this project interesting, feel free to star the repository!*
+```
+
+### 💡 ماذا حدث في الكود السابق؟
+في الكود السابق، كان السطر الأخير من الرسم البياني هو:
+`└───▶ (If General QA) ──▶ Responder Agent (DeepSeek LLM)`
+وكان يجب أن يليه مباشرة **ثلاث علامات (```)** لإغلاق مربع الكود. لأنها لم تكن موجودة، التصق كل ما بعدها داخل المربع. 
+
+الآن الكود الذي أرسلته لك أعلاه تم إصلاحه بالكامل. قم بنسخه ولصقه، وستظهر العناوين والأزرار بشكلها الاحترافي الصحيح.
