@@ -60,8 +60,6 @@ User Request
        │
        └───▶ (If General QA) ──▶ Responder Agent (DeepSeek LLM)
 
----
-
 ```
 
 ## 🛠️ Tech Stack
