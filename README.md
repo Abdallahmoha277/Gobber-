@@ -129,4 +129,4 @@ pytest tests/ -v
 ---
 
 ⭐ *If you find this project interesting, feel free to star the repository!*
-```.
+
