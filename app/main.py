@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from app.api.v1.router import api_router
 from app.core.config import settings
+from prometheus_fastapi_instrumentator import Instrumentator
 
 app = FastAPI(
     title=settings.PROJECT_NAME,
@@ -25,3 +26,6 @@ app.include_router(api_router, prefix="/api/v1")
 @app.get("/")
 def root():
     return {"message": f"Welcome to {settings.PROJECT_NAME} API!"}
+
+
+Instrumentator().instrument(app).expose(app)
