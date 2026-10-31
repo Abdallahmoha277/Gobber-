@@ -54,6 +54,12 @@ services:
     volumes:
       - grafana_data:/var/lib/grafana
 
+  loki:
+    image: grafana/loki:latest
+    ports:
+      - "3100:3100"
+    command: -config.file=/etc/loki/local-config.yaml
+
 volumes:
   postgres_data:
   qdrant_data:
