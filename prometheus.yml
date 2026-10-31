@@ -8,3 +8,5 @@ scrape_configs:
       - targets: ['localhost:8000']
         labels:
           app_name: 'Gobber'
+        labels:
+          app_name: 'Gobber'
