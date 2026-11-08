@@ -49,6 +49,10 @@ services:
     environment:
       - GF_SECURITY_ADMIN_PASSWORD=admin
       - GF_USERS_ALLOW_SIGN_UP=false
+      - GF_SERVER_ROOT_URL=https://3000-w-abdallahmohamedabdallah277-mw6kco96.cluster-celdcjy555clyxpm6fmiqmozs6.cloudworkstations.dev
+      - GF_SERVER_SERVE_FROM_SUB_PATH=false
+      - GF_SERVER_DOMAIN=3000-w-abdallahmohamedabdallah277-mw6kco96.cluster-celdcjy555clyxpm6fmiqmozs6.cloudworkstations.dev
+      - GF_SERVER_PROTOCOL=https
     volumes:
       - grafana_data:/var/lib/grafana
 
