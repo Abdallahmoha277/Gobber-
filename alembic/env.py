@@ -3,6 +3,9 @@ import sys
 from logging.config import fileConfig
 from sqlalchemy import engine_from_config, pool
 from alembic import context
+from app.models.user import User
+from app.models.memory import Memory
+from app.models.chat import ChatMessage
 
 sys.path.append(os.path.dirname(os.path.dirname(__file__)))
 
